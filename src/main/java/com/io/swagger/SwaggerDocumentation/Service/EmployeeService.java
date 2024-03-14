@@ -10,4 +10,9 @@ public interface EmployeeService {
     public Employee saveEmployees(EmployeeForm eForm);
 
     Employee getEmpDetails(int employeeId);
+
+
+    Employee updateEmployeeDetails(EmployeeForm eForm,Employee e);
+
+    String deleteEmpDetails(Integer employeeId);
 }
