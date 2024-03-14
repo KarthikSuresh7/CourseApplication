@@ -27,6 +27,7 @@ public class EmployeeServiceImpl implements  EmployeeService{
 
     @Override
     public Employee getEmpDetails(int employeeId) {
+        log.info("getEmpDetails");
         return employeeRepository.findByEmployeeid(employeeId);
     }
 }
