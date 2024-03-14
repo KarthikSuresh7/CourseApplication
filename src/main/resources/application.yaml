@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: SwaggerDocumentation
+
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=springDataBase;CharacterSet=UTF-8;encrypt=false;trustServerCertificate=true
+    username: customer
+    password: netId@2311
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+        connection:
+          characterEncoding: UTF-8
+          useUnicode: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
